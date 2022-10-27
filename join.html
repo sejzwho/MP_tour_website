@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        BOOKING PAGE 
+    </title>
+ 
+    <style>
+ 
+ body{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 180vh;
+}
+
+        form {
+            background: rgba(255,255,255,0.5);
+            max-width: 550px;
+            margin: 5px auto;
+            padding: 30px 30px;
+            box-shadow: 2px 40px 60px rgba(0, 0, 0, 0.5);
+        }
+ 
+        .form-control {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+ 
+      
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+       
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 92%;
+        }
+ 
+       
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+    </style>
+</head>
+  
+<body>
+    <h1 style="color:white"; align="center">
+        <p style="font-size:50px"><b>TOUR BOOKING SITE</b></p></h1>
+    <marquee style="color:rgb(223, 197, 150)"><p style="font-size:20px"> Madhya Pradesh Tourism Welcomes you !! For any queries or complaints visit the official website.</p></marquee>
+   
+    <form id="form">>
+ 
+       
+        <div class="form-control">
+            <label for="name" id="label-name">
+                User Name:
+            </label>
+ 
+            
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email-id :
+            </label>
+ 
+           
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                No. of Candidates
+            </label>
+ 
+           
+            <input type="text"
+                   id="age"
+                   placeholder="Enter number" />
+                   <br>
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Enter Dates for Travel:<br><br>
+                Dates from:
+            </label>
+ 
+           
+            <input type="date"
+                   id="travel"
+                   placeholder="Enter dates" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Dates To:
+            </label>           
+            <input type="date"
+                   id="travel"
+                   placeholder="Enter dates" />
+                   <br>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Your desired locations?
+                <br>  
+            </label>             
+           
+            <select name="role" id="role">
+                <option value="student">Khajuraho</option>
+                <option value="intern">Bhedaghat</option>
+                <option value="professional">
+                    Omkareshwar
+                </option>
+                <option value="other">Patalpani Waterfall</option>
+                <option value="other">Gwalior</option>
+                <option value="other">Kanha National Park</option>
+                <option value="other">Orchha</option>
+                <option value="other">Sanchi</option>
+                <option value="other">Udayagiri Caves</option>
+                <option value="other">Ujjain</option>
+                <option value="other">Bhimbetka</option>
+                <option value="other">Pachmari</option>
+            </select>
+  
+        </div> 
+ 
+        <div class="form-control">
+            <label>
+               Number of days for package
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">One day trip</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">3-5 days trip</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">5-10 days trip</input>
+                    </label>
+                    <label for="recommed-4">
+                        <input type="radio"
+                               id="recommed-4"
+                               name="recommed">10+ days</input>
+            
+            
+            <br>  
+
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>What are you expecting from the package?
+                <small>(Check all that apply)</small>
+            </label>
+          
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Hotel Arrangements</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Travel Guide</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Time Management</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Cost Efficient</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Costly but lavish</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Refreshments</input></label>
+                      
+                      
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Contact number :
+            </label>
+ 
+           
+            <input type="number"
+                   id="email"
+                   placeholder="Enter your contact no." />
+        </div>
+
+        Upload images of Identity proof:
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit" style='width:50px;margin:0 85%;height:1%;font-size:11px;position:relative;left:5px; color:black; background-color: rgb(188, 185, 180);'><br>
+        </form>
+        
+    </form><br>
+    <input type='submit' style='width:200px;margin:0 45%;height:4%;font-size:25px;position:relative;left:-70px; color:black; background-color: rgb(223, 197, 150);'>
+</body>
+  
+</html>
